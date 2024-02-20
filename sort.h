@@ -23,9 +23,9 @@ listint_t *swap_node(listint_t *node, listint_t **list);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
-void sort_partition(int *array, size_t size, int low, int high);
-int partition(int *array, size_t size, int low, int high);
-void swap(int *a, int *b);
+void sort_partition(int *array, int size, int first, int last);
+void swap(int **array, int first_index, int second_index);
+int get_pivot_index(int *array, size_t size, int first, int last);
 
 void shell_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
